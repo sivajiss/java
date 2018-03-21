@@ -1,0 +1,36 @@
+import java.awt.event.*;
+import java.awt.*;
+import java.applet.Applet;
+import java.awt.event.MouseMotionListner;
+import java.awt.event.MouseListner;
+import java.awt.event.KeyListner;
+class AppletEvent1 extends Applet 
+{
+addMouseMotionListener(new Adapter1(this));
+addMouseListener(new Adapter2(this));
+}
+class Addapter1 extends MouseMotionAdapter
+{
+AppletEvent1 app;
+Adapter1(AppletEvent1 app)
+{
+this.app=app;
+}
+public void MouseMoved(MouseEvent e)
+{
+e.ShowStatus("mouse is moved");
+}
+}
+class Addapter2 extends MouseAdapter
+{
+AppletEvent1 obj;
+Addapter2(AppletEvent1 obj)
+{
+this.obj=obj;
+}
+public void MouseRelesed(MouseEvent e)
+{
+e.showStatus("Mouse is relesed");
+}
+}
+
