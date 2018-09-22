@@ -16,6 +16,6 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>JavaCodeApp</finalName>
+    <finalName>Palakbadgujarjava</finalName>
   </build>
 </project>
